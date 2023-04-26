@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - Simplicity</title>
+    <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -37,10 +38,10 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas a quis rem, eveniet harum quos labore obcaecati nulla officiis sunt et maiores illo explicabo voluptatum?</p>
 
         <figure>
-            <img src="imagens/desenvolvimento-web-mini.jpg" alt="">
-            <img src="imagens/design-grafico-mini.jpg" alt="">
-            <img src="imagens/marketing-digital-mini.jpg" alt="">
-            <img src="imagens/consultoria-treinamento-mini.jpg" alt="">
+            <a href="imagens/desenvolvimento-web.jpg" data-lightbox="galeria" data-title="Front-End"><img src="imagens/desenvolvimento-web-mini.jpg" alt=""></a>
+            <a href="imagens/design-grafico.jpg" data-lightbox="galeria" data-title="Edição de imagens"><img src="imagens/design-grafico-mini.jpg" alt=""></a>
+            <a href="imagens/marketing-digital.jpg" data-lightbox="galeria" data-title="Venda bem"><img src="imagens/marketing-digital-mini.jpg" alt=""></a>
+            <a href="imagens/consultoria-treinamento.jpg" data-lightbox="galeria" data-title="Aprenda o que precisar"><img src="imagens/consultoria-treinamento-mini.jpg" alt=""></a>
         </figure>
        </article>
     </main>
@@ -50,6 +51,9 @@
         Senac Penha - 2023</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/galeria.js"></script>
 </body>
 </html>
