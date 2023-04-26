@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }  
+    </style>
+</head>
+<body>
+    <h1>Introdução jQuery</h1>
+    <hr>
+    <h2>A mais famosa biblioteca JS</h2>
+    <p>Ferramenta que ainda hoje facilita o desenvolvimento web usando JS.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Optio modi molestias illum qui?</p>
+    <p>Laudantium deserunt necessitatibus sed ex.</p>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        const titulo = $("h1");
+        const paragrafos = $("p");
+        const subtitulo = $("h2");
+
+        titulo.css({
+            "color" : "red",
+            "text-align" : "center"
+        });
+
+        titulo.text("Novo texto!");
+        titulo.html("Novo texto com <i>tag</i>")
+
+        subtitulo.on("click", function(){
+            // titulo.css("background", "yellow");
+            // titulo.text("Opa!!")
+
+            //encadeamento de funções
+            titulo.css("background", "yellow").text("Opa!!");
+
+            //função de efeito/animação
+            paragrafos.fadeOut();
+            titulo.slideUp();
+        })
+
+
+        console.log(titulo);
+    </script>
+</body>
+</html>
